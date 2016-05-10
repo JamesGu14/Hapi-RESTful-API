@@ -1,0 +1,34 @@
+{
+  "name": "hapi-api",
+  "version": "1.0.0",
+  "description": "Hapi API Demo with Hapi-Swagger",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://JamesGu14@github.com/JamesGu14/Hapi-RESTful-API.git"
+  },
+  "keywords": [
+    "Hapi",
+    "API",
+    "Demo",
+    "CRUD"
+  ],
+  "author": "James Gu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamesGu14/Hapi-RESTful-API/issues"
+  },
+  "homepage": "https://github.com/JamesGu14/Hapi-RESTful-API",
+  "dependencies": {
+    "good-console": "^6.1.1",
+    "hapi": "^13.4.0",
+    "hapi-swagger": "^5.1.0",
+    "inert": "^4.0.0",
+    "joi": "^8.1.0",
+    "mongoose": "^4.4.16",
+    "vision": "^4.1.0"
+  }
+}
