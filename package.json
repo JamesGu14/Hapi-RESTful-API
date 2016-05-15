@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/JamesGu14/Hapi-RESTful-API",
   "dependencies": {
+    "colors": "^1.1.2",
+    "ejs": "^2.4.1",
     "good-console": "^6.1.1",
     "hapi": "^13.4.0",
     "hapi-swagger": "^5.1.0",
