@@ -47,24 +47,16 @@ server.register([
 	});
 
 // Register all routers.
-var apiRouter = require('./route/api').routers;
-var indexRouter = require('./route/index').routers;
-var staticContentRouter = require('./route/static_content').routers;
+var allRouters = [];
+allRouters = allRouters.concat(require('./route/api').routers);
+allRouters = allRouters.concat(require('./route/index').routers);
+allRouters = allRouters.concat(require('./route/static_content').routers);
+allRouters = allRouters.concat(require('./route/solr').routers);
 
-for(var _route in apiRouter) {
-	server.route(apiRouter[_route]);
+
+for(var _route in allRouters) {
+	server.route(allRouters[_route]);
 }
-
-for(var _route in indexRouter) {
-	server.route(indexRouter[_route]);
-}
-
-for(var _route in staticContentRouter) {
-	server.route(staticContentRouter[_route]);
-}
-
-
-
 
 
 
