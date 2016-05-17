@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/mydb'); // connect to local database
 var sys_userModel = require('./model/sys_user');
 var colors = require('colors');
+var Path = require('path');
 
 // create server object
 var server = new Hapi.Server();
@@ -18,7 +19,7 @@ server.connection({port: 3000});
 const options = {
 	info: {
 		'title': 'Test API Documentation',
-		'version': '0.0.1'
+		'version': '0.0.4'
 	}
 };
 

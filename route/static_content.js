@@ -1,9 +1,15 @@
+var Path = require('path');
+
 module.exports.routers = [
 	{
 		method: 'GET',
-		path: '/content',
-		handler: function(request, reply) {
-			reply.file('');
-		}
+		path: '/content/{params*}',
+		handler: {
+	      	directory: { 
+	      		path: './content',
+	      		listing: false
+	      	}
+	    }
 	}
-]
+];
+

@@ -1,12 +1,12 @@
 'use strict'
 
-var basePath = '/';
+var routerPath = '/';
 var log = require('senso-logger');
 
 module.exports.routers = [
 {
     method: 'GET',
-    path: basePath,
+    path: routerPath,
     handler: function (request, reply) {
     	log('Today is a happy day');
         reply.view('./index/home', {

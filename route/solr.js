@@ -1,11 +1,11 @@
 'use strict'
 
-var basePath = '/solr';
+var routerPath = '/solr';
 
 module.exports.routers = [
 {
 	method: 'GET',
-	path: basePath + '/query1',
+	path: routerPath + '/query1',
 	handler: function(request, reply) {
 		http.get('http://localhost:8983/solr/gettingstarted/select?indent=on&q=id:%220805080481%22&wt=json', (res) => {
 			console.log('Got Response: ${res.statusCode}');

@@ -2,14 +2,14 @@ var Joi = require('joi');
 
 var apiTag = ['api'];
 
-var basePath = '/api';
+var routerPath = '/api';
 
 // Routes for APIs
 // get all users
 module.exports.routers = [
 {
 	method: 'GET',
-	path: basePath + '/user',
+	path: routerPath + '/user',
 	config: {
 		tags: apiTag,
 		description: 'Get All User Data',
@@ -37,7 +37,7 @@ module.exports.routers = [
 // get a single user
 {
 	method: 'GET',
-	path: basePath + '/user/{id}',
+	path: routerPath + '/user/{id}',
 	config: {
 		tags: apiTag,
 		description: 'Get a specific user',
@@ -79,7 +79,7 @@ module.exports.routers = [
 // Create user
 {
 	method: 'POST',
-	path: basePath + '/user',
+	path: routerPath + '/user',
 	config: {
 		tags: apiTag,
 		description: 'Save single user data',
@@ -115,7 +115,7 @@ module.exports.routers = [
 // Update a single user
 {
 	method: 'PUT',
-	path: basePath + '/user/{id}',
+	path: routerPath + '/user/{id}',
 	config: {
 		tags: apiTag,
 		description: 'Update a specific user data',
@@ -152,7 +152,7 @@ module.exports.routers = [
 
 {
 	method: 'DELETE',
-	path: basePath + '/user/{id}',
+	path: routerPath + '/user/{id}',
 	config: {
 		tags: apiTag,
 		description: 'Remove a specific user data',
