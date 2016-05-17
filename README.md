@@ -27,3 +27,8 @@ allRouters = allRouters.concat(require('./route/solr').routers);
 
 Hapi RESTful API with Hapi-Swagger
 
+If you have got your MongoDB up and running, you will be able to browse your API page at:
+
+```js
+localhost:3000/documentation
+```
